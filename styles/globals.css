@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "sans-serif";
+}
+
+.ant-form-item {
+  margin-bottom: 0px !important;
+}
+
+/* Add this to your CSS file */
+.animated-polyline {
+  animation: dashAnimation 3s linear infinite;
+}
+
+@keyframes dashAnimation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -20; /* or any other negative value larger than the path length */
+  }
+}
+
+/* chloropleth.css start  */
+#map-container {
+  width: 100%; /* Adjust this as needed */
+  height: auto; /* The height will adjust based on content */
+}
+
+.tooltips {
+  position: absolute;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.6);
+  border: 0px;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 999;
+  transform: translate(-50%, -50%); /* Center the tooltip on the cursor */
+  pointer-events: none; /* Prevent the tooltip from blocking interactions */
+}
+/* cholorpleth css end  */
+/* padding: 6px; */
+
+#root {
+  margin: 0 auto;
+  display: flex;
+  height: 10vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80vw;
+}
+
+.energy-svg {
+  height: 300px;
+  overflow: visible;
+  margin: 0;
+}
+
+.svg-wrap {
+  width: 100%;
+  display: flex;
+  margin: 16px;
+  height: 200px;
+}
+
+.y-axis-svg {
+  overflow: visible;
+}
+
+.x-axis-scroll {
+  overflow-x: scroll;
+  margin-bottom: -150px;
+}
+
+/* width */
+.x-axis-scroll::-webkit-scrollbar {
+  height: 5px;
+  position: relative;
+}
+
+/* Track */
+.x-axis-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.x-axis-scroll::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 9999px;
+}
+
+/* Handle on hover */
+.x-axis-scroll:hover::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 9999px;
+}
+
+.legend {
+  display: flex; /* Display items in a row */
+  margin-top: 10px; /* Add some space between chart and legend */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 50px;
+   */
+  margin-left: 2%;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.legend-container {
+  margin-top: 20%;
+}
+
+/* tooltip for stacked bar  */
+
+.tooltip {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  z-index: 1;
+  color: #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.tooltip-color {
+  width: 20px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+/* before hover calendar button  */
+:where(.css-dev-only-do-not-override-sk7ap8).ant-btn-primary:disabled {
+  cursor: not-allowed;
+  color: black;
+  box-shadow: none;
+}
+:where(.css-dev-only-do-not-override-sk7ap8).ant-btn-primary:disabled {
+  cursor: not-allowed;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* after hover calendar button  */
+:where(.css-dev-only-do-not-override-sk7ap8).ant-btn-primary {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+:where(.css-dev-only-do-not-override-sk7ap8).ant-btn-primary:not(
+    :disabled
+  ):hover {
+  /* color: black ; */
+  color: #4096ff;
+  background-color: transparent;
+}
+.ant-btn-primary {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+.ant-btn-primary:not(:disabled):hover {
+  color: #4096ff;
+  background-color: transparent;
+}
+
+.custom-css-logout {
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px; /* Adjust line height as needed */
+  cursor: pointer;
+  /* position:relative; */
+  /* position: sticky; */
+  position:fixed;
+  /* top: auto; */
+  bottom: 0;
+  /* margin-bottom: 150px; */
+  margin-bottom: 1.4rem;
+  /* width: 21.9rem; */
+  width: 350px;
+  height: 40px;
+  background-color: gray; /* Adjust background color as needed */
+  padding-left: 10px; /* Add padding to the left */
+  z-index: 100; /* Adjust z-index as needed */
+  /* margin-top: 171px; */
+  margin-top: 50rem;
+}
+
+.custom-css-logout:hover {
+  background-color: rgb(145, 140, 140) !important;
+  /* background-color: gray !important; */
+}
+
+.custom-css-logout img {
+  color: #fffd;
+  margin-top: 20px;
+  width: 25px;
+  margin-left: 10px; /* Add space between icon and text */
+}
+
+.logout-button-css{
+  position: "fixed";
+  top: "auto";
+  background: "gray";
+  padding: "1rem 0 1.5rem 0";
+}
+
+.logout-button-css:hover {
+  background-color: rgb(145, 140, 140) !important;
+}
+
+/* Media query to hide text when viewport width is below 768px */
+@media only screen and (max-width: 768px) {
+  .media-logout {
+    display: none; /* Hide text */
+  }
+}
+
+:where(
+    .css-dev-only-do-not-override-sk7ap8
+  ).ant-descriptions.ant-descriptions-bordered
+  .ant-descriptions-row {
+  border-bottom: 1px solid transparent !important;
+  border: 1px solid transparent !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+}
+:where(
+    .css-dev-only-do-not-override-sk7ap8
+  ).ant-descriptions.ant-descriptions-bordered
+  .ant-descriptions-view {
+  border: 1px solid transparent !important;
+}
+:where(
+    .css-dev-only-do-not-override-sk7ap8
+  ).ant-descriptions.ant-descriptions-bordered
+  .ant-descriptions-item-label,
+:where(
+    .css-dev-only-do-not-override-sk7ap8
+  ).ant-descriptions.ant-descriptions-bordered
+  .ant-descriptions-item-content {
+  padding: 16px 24px;
+  border-inline-end: 1px solid transparent !important;
+}
+
+.ant-descriptions.ant-descriptions-bordered .ant-descriptions-row {
+  border-bottom: 1px solid transparent !important;
+  border: 1px solid transparent !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+}
+.ant-descriptions.ant-descriptions-bordered .ant-descriptions-view {
+  border: 1px solid transparent !important;
+}
+.ant-descriptions.ant-descriptions-bordered .ant-descriptions-item-label,
+.ant-descriptions.ant-descriptions-bordered .ant-descriptions-item-content {
+  padding: 16px 24px;
+  border-inline-end: 1px solid transparent !important;
+}
+
+.descriptionTable {
+  /* background-color: #FAF9F6; */
+  padding: 30;
+  border: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  max-height: 325px; /* Set the maximum height to 220px */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #9a9a9a transparent;
+}
+.descriptionChildern {
+  border-bottom: 1px solid transparent !important;
+  border: 1px solid transparent !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 25px;
+  word-break: break-all !important;
+  border: 10px;
+  margin-left: -5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+.descriptionTable::-webkit-scrollbar {
+  width: 2px !important; /* Width of the scrollbar */
+}
+
+.descriptionTable::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the scrollbar track */
+}
+
+.descriptionTable::-webkit-scrollbar-thumb {
+  background-color: #9a9a9a; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #686868;
+  border-radius: 4px; /* Border radius of the scrollbar thumb */
+}
+.ant-descriptions-item-label {
+  font-weight: 600 !important;
+}
+.container-table {
+  margin-bottom: 50px !important;
+}
+.descriptionChildren {
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  width: 100%; /* Set children width to 50% for equal width */
+  height: 100%;
+  word-break: keep-all !important;
+  border: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.descriptionLabel {
+  /* width: auto; */
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  word-break: keep-all !important;
+}
+.margin-left-30 {
+  margin-right: -15%;
+}
+.margin-left-40 {
+  margin-right: -8%;
+  margin-left: 8%;
+}
+
+.custom-range-picker{
+  width: 14rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .custom-css-pageheaderSearch {
+width: 100%;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .custom-css-pageheaderButtonMedia {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .custom-css-pageheaderButton {
+    display: none;
+  }
+}
+
+.ant-input-number-handler-wrap {
+  display: none !important;
+}
+
+@media only screen and (max-width: 515px) {
+  .custom-margin-pageheader {
+    margin-right: 35px !important;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: flex-start !important;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .custome-pageheader-media-column-css {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.custom-drop-down-no-option {
+  background-color: #ffffff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: "0 6px 16px 0 rgba(0, 0, 0, 0.08),0 3px 6px -4px rgba(0, 0, 0, 0.12),0 9px 28px 8px rgba(0, 0, 0, 0.05)";
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: baseline;
+}
+
+.ant-popover{
+  width: 30% !important;
+  /* text-wrap: wrap; */
+  /* word-wrap: break-word; */
+  overflow-wrap: break-word;
+}
+
+/* .ant-checkbox-wrapper > span:not(.ant-checkbox-inner) {
+  /* Your styles here */
+  /* padding-inline-start: 5px;
+  padding-inline-end: 5px;
+} */ 
+
+/* .ant-checkbox-wrapper {
+  width: 100px;
+  white-space: nowrap;
+  margin-inline-start: 0px !important;
+} */
+
+.ant-radio-wrapper-disabled {
+  color: rgba(0, 0, 0, 0.25);
+}
+/* .ant-checkbox+span {
+padding-inline-start: 8px;
+padding-inline-end: 0px;
+} */
+
+.popover-btn:active{
+  color: #063970 !important;
+}
+
+.popover-btn:focus{
+  border-color: #0958d9 !important;
+}
+
+.ant-divider-horizontal{
+  margin: 12px 0px !important;
+}
+
+.clear-filters:hover, .apply-filters:hover{
+  cursor: pointer;
+}
+
+.clear-filters, .apply-filters{
+  font-size: 15px;
+}
+
+.dd-cancel-btn:hover{
+  cursor: pointer;
+}

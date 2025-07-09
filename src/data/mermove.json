@@ -1,0 +1,24 @@
+[
+    {
+        "Date": "01/01/2023",
+        "Port": "KPT",
+        "Name of MV": "CLEMEN SCHULTE",
+        "Flag": "SINGAPORE",
+        "Movement": "LEFT"
+    },
+    {
+        "Date": "01/01/2023",
+        "Port": "PQA",
+        "Name of MV": "TEERA BHUM",
+        "Flag": "SINGAPORE",
+        "Movement": "ENTER"
+    },
+    {
+        "Date": "01/01/2023",
+        "Port": "KPT",
+        "Name of MV": "MALIHA",
+        "Flag": "PANAMA",
+        "Movement": "LEFT"
+    }
+  ]	
+  

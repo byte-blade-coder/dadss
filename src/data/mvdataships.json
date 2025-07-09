@@ -1,0 +1,59 @@
+[
+    {
+      "Date": "17/01/2023",
+      "TIME": "1800",
+      "REPORTED BY": "BASOL",
+      "POSITION": "2319",
+      "MV-FBs NAME": "UNICORN",
+      "IMO NO": "9595931",
+      "CREW": "",
+      "FLAG": "",
+      "TYPE": "CARGO",
+      "LPOC": "",
+      "NPOC": "BHAVNAGAR(INDIA)",
+      "REMARKS": ""
+    },
+    {
+      "Date": "21/02/2023",
+      "TIME": "1800",
+      "REPORTED BY": "DASHT",
+      "POSITION": "2249",
+      "MV-FBs NAME": "KSL HENGYANG",
+      "IMO NO": "9333931",
+      "CREW": "",
+      "FLAG": "",
+      "TYPE": "CARGO",
+      "LPOC": "",
+      "NPOC": "BHAVNAGAR(INDIA)",
+      "REMARKS": ""
+    },
+    {
+      "Date": "09/03/2023",
+      "TIME": "1800",
+      "REPORTED BY": "RHMT",
+      "POSITION": "2302",
+      "MV-FBs NAME": "SAVER-I",
+      "IMO NO": "9140451",
+      "CREW": "",
+      "FLAG": "",
+      "TYPE": "EMPTY",
+      "LPOC": "KARACHI",
+      "NPOC": "CHENNAI (INDIA)",
+      "REMARKS": ""
+    },
+    {
+      "Date": "16/02/2023",
+      "TIME": "1800",
+      "REPORTED BY": "DASHT",
+      "POSITION": "2224",
+      "MV-FBs NAME": "SEA FORTUNE",
+      "IMO NO": "9427275",
+      "CREW": "",
+      "FLAG": "",
+      "TYPE": "TANKER",
+      "LPOC": "",
+      "NPOC": "DAHEJ(INDIA)",
+      "REMARKS": ""
+    }
+  ]
+  

@@ -1,0 +1,37 @@
+[
+    {
+      "DTG": "01/01/2023",
+      "Reg": "1201272",
+      "DHOW Name":"AL AHMED",
+      "Country":"COMOROS",
+      "LPOC": "KARACHI",
+      "NPOC": "CHAHBAHAR",
+      "REMARKS": "LEFT",
+      "Cargo": "NIL",
+      "No of Days": ""
+    },
+    {
+      "DTG": "01/01/2023",
+      "Reg": "398",
+      "DHOW Name":"AL HAMDANI",
+      "Country":"TOGO",
+      "LPOC": "KARACHI",
+      "NPOC": "DUBAI",
+      "REMARKS": "LEFT",
+      "Cargo": "NIL",
+      "No of Days": ""
+    },
+    {
+      "DTG": "02/01/2023",
+      "Reg": "1201272",
+      "DHOW Name":"AL AHMED",
+      "Country":"COMOROS",
+      "LPOC": "CHAHBAHAR",
+      "NPOC": "KARACHI",
+      "REMARKS": "ENTER",
+      "Cargo": "NIL",
+      "No of Days": ""
+    }
+
+  ]
+  

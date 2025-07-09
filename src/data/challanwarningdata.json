@@ -1,0 +1,42 @@
+[
+    {
+        "Date": "02/01/2023",
+        "Reg NO": "23482-B",
+        "Boat Name": "AL JEELANI",
+        "Offence": "CHILD LABOUR",
+        "Quantity/Days": "",
+        "Challan Amount": "",
+        "Issued By": "NUSRAT",
+        "Warning": 1
+    },
+    {
+        "Date": "02/01/2023",
+        "Reg NO": "20986-B",
+        "Boat Name": "AL MASHALLAH",
+        "Offence": "CHILD LABOUR",
+        "Quantity/Days": "",
+        "Challan Amount": "",
+        "Issued By": "NUSRAT",
+        "Warning": 1
+    },
+    {
+        "Date": "02/01/2023",
+        "Reg NO": "21023-B",
+        "Boat Name": "SUBHAN ALLAH",
+        "Offence": "CHILD LABOUR",
+        "Quantity/Days": "",
+        "Challan Amount": "",
+        "Issued By": "NUSRAT",
+        "Warning": 1
+    },
+    {
+        "Date": "17/01/2023",
+        "Reg NO": "22422-B",
+        "Boat Name": "AL INAM",
+        "Offence": "EXPIRED PC",
+        "Quantity/Days": "",
+        "Challan Amount": "",
+        "Issued By": "RAFAQAT",
+        "Warning": 1
+    }
+]

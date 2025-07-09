@@ -1,0 +1,47 @@
+[
+  {
+    "S No": 1,
+    "Time": "28-Jan-22",
+    "Year": 2022,
+    "Position": "140 MPT 90 NM (10 NM INSIDE EEZ)",
+    "Apprehended by": "PMSS BASOL",
+    "Name of Boats": "TULSI MAIYA REG NO (IND-GJ-11-MM-A1591)",
+    "No of Boats": [1],
+    "Country": ["INDIA"],
+    "Crew": 7,
+    "Crew Name": "",
+    "Nets Seized (Quantity)": "",
+    "Fish Catch seized (Quantity)": ""
+  },
+  {
+    "S No": 2,
+    "Time": "31-Jan-22",
+    "Year": 2022,
+    "Position": "153 MPT 108 NM (04 NM INSIDE EEZ)",
+    "Apprehended by": "PMSS KOLACHI",
+    "Name of Boats": "SATIA WATI REG NO (IND-GJ-21-MM-153)",
+    "No of Boats": [1],
+    "Country": ["INDIA"],
+    "Crew": "3 (05 X OUT OF 08 X CREW RELEASED AS GOODWILL GESTURE TO ICG)",
+    "Crew Name": "",
+    "Nets Seized (Quantity)": "",
+    "Fish Catch seized (Quantity)": ""
+  },
+  {
+    "S No": 3,
+    "Time": "05-Feb-22",
+    "Year": 2022,
+    "Position": "173 MPT 117 NM",
+    "Apprehended by": "PMSS DASHT",
+    "Name of Boats": [
+      "MERAJ ALI REG NO (IND-GJ-25-MM-4936 )",
+      "AL AHAD REG NO (IND-GJ-37-MM-185 )"
+    ],
+    "No of Boats": [1],
+    "Country": ["INDIA"],
+    "Crew": [7,6],
+    "Crew Name": "",
+    "Nets Seized (Quantity)": "",
+    "Fish Catch seized (Quantity)": ""
+  }
+]
