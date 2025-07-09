@@ -205,6 +205,13 @@ const Drawer = (props) => {
           <MdAppRegistration size={20} />
         ),
         getItem(
+          <Link href="/searchvesselui">
+            Picket Data Input Form
+          </Link>,
+          "14",
+          <MdAppRegistration size={20} />
+        ),
+        getItem(
           <Link href="/searchandrescue">
             SAR Data Input Form
           </Link>,
