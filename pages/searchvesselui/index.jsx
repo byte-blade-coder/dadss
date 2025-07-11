@@ -75,20 +75,56 @@ function AddSpecialReport() {
   };
 
   // // Update filtered data and reset pagination when searchData changes
-  useEffect(() => {
-    
-    console.log(vesselStatus)
-  //   if (searchData) {
-  //     dispatch(fetchRegisteredVessel(searchData)).then((response) => {
-  //       if (response?.payload) {
-  //         setFilteredData(response.payload);
-  //         setCurrentPage(1); // Reset to first page on new search
-  //       }
-  //     });
-  //   } else {
-  //     setFilteredData([]); // Clear displayed data when search is empty
-  //   }
-  }, []);
+  // Replace inside your component
+
+useEffect(() => {
+  const dummyData = [
+    {
+      rv_key: "1",
+      rv_name: "Fisher King",
+      rv_regno: "REG123",
+      rv_id: "VID001",
+      rv_type: "Trawler",
+      rv_flag: "Pakistan",
+      rv_country_code: "PK",
+      rv_province: "Sindh",
+      tripDetails: [
+        {
+          rvt_tripstatus: "ongoing"
+        }
+      ]
+    },
+    {
+      rv_key: "2",
+      rv_name: "Sea Queen",
+      rv_regno: "REG456",
+      rv_id: "VID002",
+      rv_type: "Longliner",
+      rv_flag: "Iran",
+      rv_country_code: "IR",
+      rv_province: "Balochistan",
+      tripDetails: [
+        {
+          rvt_tripstatus: "completed"
+        }
+      ]
+    },
+    {
+      rv_key: "3",
+      rv_name: "Ocean Pearl",
+      rv_regno: "REG789",
+      rv_id: "VID003",
+      rv_type: "Dragger",
+      rv_flag: "Oman",
+      rv_country_code: "OM",
+      rv_province: "Sindh",
+      tripDetails: []
+    }
+  ];
+
+  setFilteredData(dummyData);
+  setCurrentPage(1);
+}, []);
 
   // Pagination logic
   const pageSize = 10;
